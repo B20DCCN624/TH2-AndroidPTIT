@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_search"
+        android:text="Tìm kiếm và thống kê"
+        android:gravity="center"
+        android:textSize="28dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <SearchView
+        android:id="@+id/search"
+        android:layout_below="@+id/tv_search"
+        android:queryHint="Nhập tên bài hát / ca sĩ"
+        android:iconifiedByDefault="false"
+        android:background="@drawable/border_radius"
+        android:elevation="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/spinner_statistical"
+        android:layout_below="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_radius"
+        android:backgroundTint="#EEEEEE"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:textSize="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_serach"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/spinner_statistical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

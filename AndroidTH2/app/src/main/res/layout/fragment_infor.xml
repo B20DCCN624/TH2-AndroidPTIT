@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_infor"
+        android:text="Thông tin"
+        android:gravity="center"
+        android:textSize="28dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/infor_img"
+        android:src="@drawable/img1"
+        android:layout_below="@+id/tv_infor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"/>
+
+    <LinearLayout
+        android:layout_below="@+id/infor_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/tv_self"
+                android:text="Họ và tên:"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_infor_self"
+                android:layout_toRightOf="@+id/tv_self"
+                android:text="Vũ Anh Tuấn"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="10dp">
+
+            <TextView
+                android:id="@+id/tv_forte"
+                android:text="Sở trường:"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_infor_forte"
+                android:layout_toRightOf="@+id/tv_forte"
+                android:text="Ăn - chơi - ngủ"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="10dp">
+
+            <TextView
+                android:id="@+id/tv_weakness"
+                android:text="Sở đoản:"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_infor_weakness"
+                android:layout_toRightOf="@+id/tv_weakness"
+                android:text="Học"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
